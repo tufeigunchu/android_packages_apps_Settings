@@ -35,9 +35,17 @@
             settings:enableCopying="true"
             android:selectable="true"/>
 
+        <Preference
+        android:key="permissionx"
+        android:title="@string/app_permissions"
+        android:order="-997">
+        <intent android:targetPackage="org.crdroid.permissionmanagerx"
+                android:targetClass="com.mirfatif.permissionmanagerx.fwk.MainActivityM"/>
+    </Preference>
+
         <com.android.settingslib.widget.LayoutPreference
             android:key="my_device_hw_header"
-            android:order="-997"
+            android:order="-996"
             android:layout="@layout/about_device_info_hw"
             android:selectable="false"
             settings:isPreferenceVisible="true"/>

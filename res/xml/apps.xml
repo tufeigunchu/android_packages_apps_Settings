@@ -80,6 +80,33 @@
         <intent android:action="android.settings.MANAGE_CLONED_APPS_SETTINGS"/>
     </Preference>
 
+    <Preference
+        android:key="detail_apps"
+        android:title="@string/app_install_details_title"
+        android:summary="@string/app_install_details_title"
+        android:order="-994">
+        <intent android:targetPackage="org.crdroid.AppManager"
+                android:targetClass="io.github.muntashirakon.AppManager.main.SplashActivity"/>
+    </Preference>
+    
+    <Preference
+        android:key="running_apps"
+        android:title="@string/app_ops_running"
+        android:summary="@string/runningservicedetails_settings_title"
+        android:order="-993">
+        <intent android:targetPackage="org.crdroid.AppManager"
+                android:targetClass="io.github.muntashirakon.AppManager.runningapps.RunningAppsActivity"/>
+    </Preference>
+    
+    <Preference
+        android:key="usage_apps"
+        android:title="@string/details_subtitle"
+        android:summary="@string/testing_usage_stats"
+        android:order="-992">
+        <intent android:targetPackage="org.crdroid.AppManager"
+                android:targetClass="io.github.muntashirakon.AppManager.usage.AppUsageActivity"/>
+    </Preference>
+
     <PreferenceCategory
         android:key="dashboard_tile_placeholder"
         android:order="10"/>
@@ -104,6 +131,14 @@
         <extra
             android:name="classname"
             android:value="com.android.settings.Settings$AppBatteryUsageActivity"/>
+    </Preference>
+
+    <Preference
+        android:key="permissionx"
+        android:title="@string/app_permissions"
+        android:order="19">
+        <intent android:targetPackage="org.crdroid.permissionmanagerx"
+                android:targetClass="com.mirfatif.permissionmanagerx.fwk.MainActivityM"/>
     </Preference>
 
     <Preference

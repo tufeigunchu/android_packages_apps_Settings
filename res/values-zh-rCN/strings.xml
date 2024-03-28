@@ -4797,4 +4797,6 @@
     <string name="contrast_medium" msgid="384414510709285811">"中"</string>
     <string name="contrast_high" msgid="3988567609694797696">"高"</string>
     <string name="dock_multi_instances_not_supported_text" msgid="3513493664467667084">"此应用只能在 1 个窗口中打开"</string>
+    <string name="force_disable_text">"强制停用"</string>
+    <string name="app_force_disable_dlg_text">"强制停用不会进行安全检查，请勿停用系统必需组件，否则您可能需要恢复出厂才能进入桌面！"</string>
 </resources>
